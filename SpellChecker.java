@@ -31,6 +31,7 @@ public class SpellChecker {
 		if (word1.charAt(0) == word2.charAt(0)) {
 			return levenshtein(tail(word1), tail(word2));
 		}
+		// #feedback - for consistency, you should use the tail method here as well.
 		return 1 + Math.min(
 				levenshtein(word1.substring(1), word2),
 				Math.min(
