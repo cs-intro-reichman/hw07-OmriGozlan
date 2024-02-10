@@ -41,6 +41,7 @@ public class HashTagTokenizer {
         int N = hashtag.length();
 
         for (int i = 1; i <= N; i++) {
+		// #feedback - you should convert the hashtag to lower case. For that you can use the function you wrote, but also String's toLowerCase method.
 			String prefix = hashtag.substring(0, i);
 			if (existInDictionary(prefix, dictionary)) {
 				System.out.println(prefix);
